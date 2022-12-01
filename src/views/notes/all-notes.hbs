@@ -1,0 +1,17 @@
+<!--- Con esta vista, vamos a poder observar las notas-->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<div class="row">
+    {{#each notes}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    {{title}} <a href="#"><i class='bx bx-child'></i></a>
+                    <i class='bx bx-child'></i>
+                </h4>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
