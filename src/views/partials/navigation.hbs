@@ -1,0 +1,36 @@
+       <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+               <div class="bg-dark p-4">
+                    <h4 class="text-white">M E N U</h4>
+                    {{#if user}}
+                    <span class="text-muted"><i class='bx bxs-home-heart bx-flashing-hover' style='color:rgb(255, 255, 255)'><a href="../" class="text-white bg-dark"> Inicio</a></i>
+                     <br>
+                    <span class="text-muted"><i class='bx bxs-food-menu bx-flashing-hover' style='color:rgb(255, 255, 255)'><a href="../about" class="text-white bg-dark"> i</a></i></span>
+                    <br>
+                    <span class="text-muted"><i class='bx bx-search-alt-2 bx-flashing-hover' style='color:rgb(255, 255, 255)'><a href="../products/users-products" class="text-white bg-dark"> Nuestros productos</a></i></span>
+                    <br>
+                    <span class="text-muted"><i class='bx bx-log-in-circle bx-flashing-hover' style='color:rgb(255, 255, 255)'><a href="../users/signin" class="text-white bg-dark"> Inicar sesión</a></i></span>
+                    {{else}}
+                          <span class="text-muted"><i class='bx bx-log-out-circle bx-flashing-hover' style='color:rgb(255, 255, 255)'><a href="../users/signin" class="text-white bg-dark"> Cerrar sesión</a></i></span>
+                     <br>
+                    {{/if}}
+                    {{#if user.isadmin}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opciones Administrativas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="/products"></a></li>
+                        <li><a class="dropdown-item" href="/notes"></a></li>
+                    </ul>
+                </li>
+                {{/if}}
+               </div>
+          </div>
+     <nav class="navbar navbar-dark bg-dark">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+     </button>
+     <span class="text-muted"><h4 class="text-white bg-dark text-center"><i class='bx bxs-heart-circle' style='color:#ffffff' > ME LATE CHOCOLATE</i></h4></span>
+     </nav>
+     </div>
